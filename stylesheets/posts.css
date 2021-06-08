@@ -1,0 +1,192 @@
+/*-------------------- PARA EL BOTÓN "LIKE" ----------------------- */
+.fa-heart {
+       cursor: pointer;
+       color: #FFD220;
+       transition: .3s ease all;
+       text-align: right;
+       font-size: 180%;
+       margin-left: 5%;
+}      
+
+/*----------------*/
+
+.postToWall{
+       margin: 10px; 
+}
+.postOnWall{
+       margin-bottom: 2%;
+}
+   
+/* ----- post ------- */
+   
+.postId{
+       background-color: white;
+       border: rgba(255, 255, 255, 0);
+       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.274); 
+       padding-bottom:1px ;
+       margin-bottom: 4%;
+       /* padding-bottom:2%; */
+       /* width: 35%;  */
+}
+.userPhoto{
+       width:3rem;
+       border-radius: 50%;
+       margin-right: 1rem;
+       float: left;
+}
+.likeAndComment{
+       width: 30px;
+       margin-left: 3%;
+}
+#postContent{
+       margin:1% 1%;
+       text-align: justify;
+       outline:none;
+}
+#savePost{
+       font-style: italic;
+       color:rgba(116, 55, 144, 1);
+       outline: none;
+       text-align: right;
+       margin-right:5%;
+}
+#userNamePost{
+       padding-top:5%;
+       white-space: nowrap;
+}
+.daysAgo{
+       padding-bottom: 2%;
+       font-size: small;
+       color:rgb(99, 93, 93);
+       margin-top:5%;
+}
+.likeAndCommentWrapper{
+       flex-direction: row;
+       white-space: nowrap;
+       margin-left: 5%;
+}
+.likeAndCommentWrapper:hover{
+       background-color: rgb(196, 196, 196);
+}
+#likeAndCommentSection{
+       display:flex;
+       flex-direction: row;
+       height: 2rem;
+}
+.likeAndCommentWrapper > p {
+       font-size: 0.8rem;
+       flex-direction: row ;
+       color:rgb(99, 93, 93);
+       align-self: center;
+}
+#postHeader{
+       display: flex;
+       flex-direction: row;
+       padding: 2%;
+       justify-content: space-between;
+}
+.fa-ellipsis-h{
+       border-radius: 50%;
+       height: 1.3rem;
+       width: 1.3rem;
+       justify-content: flex-end;
+       padding: 0.4%;
+}
+.fa-ellipsis-h:hover{
+       background-color: rgb(196, 196, 196);
+}
+#postHeaderWrapper{
+       display:flex;
+       flex-direction: column;
+}
+#postHeaderWrapper > p{
+       white-space: nowrap;
+}
+#userInfoPost{
+       display:flex;
+       flex-direction: row;
+}
+.flex{
+       display:block;
+       display:flex;
+}
+#deleteOrModifyArea{
+    background-color: white;
+    border: rgba(255, 255, 255, 0);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.274); 
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.show{
+       display:block;
+}
+.hidden{
+       display:none;
+}
+.textOnComment{
+       border:none;
+       background-color: transparent;
+       box-shadow: none;
+       outline:none;
+       padding-left:2%;
+       height: 2.2rem;
+       border-radius: 15px;
+       margin-left:2%;
+       width: 90%;
+}
+#commentContainerWrap{
+       margin-top: 2%;
+       margin-left: 6%;
+       height: 3rem;
+       display:flex;
+       flex-direction: row;
+}
+.image-post{
+       height:300px;
+       object-fit: contain;
+       margin:auto;
+}
+.formComment{
+       background-color: #e4ddf3d3;
+       box-shadow: none;
+       outline:none;
+       width: 85%;
+       height: 2.2rem;
+       border-radius: 20px;
+       margin-top:0.5%;
+       margin-left: 1%;
+}
+.fa-share-square{
+       float: right;
+       margin-right: 2%;
+       color: rgba(116, 55, 144, 1);
+       margin-top:1.2%;
+       font-size: large;
+}
+.fa-comment-dots{
+       font-size: 180%;
+       color:rgba(255, 210, 32, 1);
+       margin-left:2%;
+}
+.numberLikes{
+       font-size: large;
+       margin-left: 2%;
+}
+@media only screen and (max-width: 500px) {
+       .fa-share-square{
+              float: right;
+              margin-top: auto;
+              margin-bottom: auto;
+       }
+       .formComment{
+              width: 80%;
+              display: flex;
+       }
+       .image-post{
+              max-height:300px;
+              object-fit: contain;
+              margin:auto;
+              max-width: 300px;
+       }
+}
